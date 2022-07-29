@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Puissance 4</title>
+</head>
+<body>
+
+    <h2 id="winner"></h2>
+    <h3 id="currentPlayer"></h3>
+
+    <div id="board"></div>
+
+    <!-- Implement everything below in the plugin connect 4, must be generated with it -->
+    <!-- =============== Button menu =============== -->
+
+    <div class="game_info">
+        <button id="opt_color">Custom</button>
+        <button id="reset_btn">Reset</button>
+    </div>
+
+    <!-- =============== Modal for custom color of the game =============== -->
+
+    <div id="modal_box" class="modalCustomColor">
+        <div class="modal_content">
+            <span class="close">&times;</span>
+            <div>
+            <p>Change the board's color</p>  
+            <select name="bgCustom" id="bgCustom" onchange="customColor(this);">
+                <option value="#1F4690" id="ocean">Ocean</option>
+                <option value="#66BFBF" id="bluesky">Blue Sky</option>
+                <option value="#610C63" id="aubergine">Aubergine</option>
+                <option value="#383838" id="deepgrey">Deep Grey</option>
+            </select>
+        </div>
+
+            <p>Change Player 1's color</p>
+            <select name="player1Custom" id="player1Custom" onchange="customPlayer1(this)";>
+                <option value="#F582A7" id="pink">Pink</option>
+                <option value="#5EE6EB" id="granita">Granita</option>
+                <option value="#FBB454" id="orange">Orange</option>
+                <option value="#D18CE0" id="lavender">Lavander</option>
+            </select>
+
+            <p>Change Player 2's color</p>
+            <select name="player2Custom" id="player2Custom" onchange="customPlayer2(this)">
+                <option value="#F9CEEE" id="bubblegum">Bubblegum</option>
+                <option value="#97C4B8" id="mist">Mist</option>
+                <option value="#CCF3EE" id="pastelgreen">Pastel Green</option>
+                <option value="#FFEF82" id="lemon">Lemon</option>
+            </select>
+        </div>
+    </div>
+
+    <script src="script/plug.js"></script>
+    <script src="script/puissance4.js"></script>
+    <script src="script/menu.js"></script>
+</body>
+</html>

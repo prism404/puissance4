@@ -1,0 +1,26 @@
+{
+  "name": "puissance4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "puissance4.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel main-es6 -d compiled-es5"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.18.6",
+    "@babel/core": "^7.18.6",
+    "@babel/preset-env": "^7.18.6",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.2.5",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "http-server": "^14.1.1",
+    "webpack": "^5.73.0",
+    "webpack-dev-server": "^4.9.3"
+  }
+}
